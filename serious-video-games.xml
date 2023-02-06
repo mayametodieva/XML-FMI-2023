@@ -1,0 +1,531 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type = "text/xsl" href = "serious-video-games.xsl"?>
+
+<!DOCTYPE catalogue SYSTEM "serious-video-games.dtd">
+
+<catalogue>
+  <genres>
+    <genre id="gr-0001" title="Games for Health" >
+      <image source="health_title"/>
+      <description>
+        Games for Health are games that aim to either promote 
+        health or to prevent, diagnose or treat (chronic) diseases. 
+        These games, which are generally considered serious games, 
+        aim to influence health outcomes by increasing the user's 
+        knowledge and changing their behaviors through play.
+      </description>
+    </genre>
+    <genre id="gr-0002" title="Advergames">
+      <image source="advergames_title"/>
+      <description>
+        An advergame is a form of advertising in video games, 
+        in which the video game is developed by or in close 
+        collaboration with a corporate entity for purposes of 
+        advertising a brand-name product. While other video games 
+        may use in-game advertising (such as an advertisement 
+        on a virtual billboard or branding on an in-game object), 
+        an advergame is differentiated by the Interactive 
+        Advertising Bureau as a "game specifically designed 
+        around product or service being advertised". 
+      </description>
+    </genre>
+    <genre id="gr-0003" title="Games for Training">
+      <image source="training_title"/>
+      <description>
+        Games for training, also known as serious 
+        games or edutainment games, are video games 
+        that are designed to educate or train players 
+        in a specific subject or skill. These games are 
+        often used in education, corporate training, and 
+        military training, and can be used to teach a wide 
+        variety of topics, such as leadership, teamwork, 
+        problem-solving, and technical skills. Games for 
+        training can be effective at engaging and motivating 
+        learners, and can be used to supplement traditional 
+        teaching methods or to create immersive, interactive 
+        learning experiences.
+      </description>
+    </genre>
+    <genre id="gr-0004" title="Games for Education">
+      <image source="education_title"/>
+      <description>
+        Educational games are games explicitly designed with 
+        educational purposes, or which have incidental or 
+        secondary educational value. All types of games may 
+        be used in an educational environment, however 
+        educational games are games that are designed to 
+        help people learn about certain subjects, expand 
+        concepts, reinforce development, understand a historical 
+        event or culture, or assist them in learning a skill 
+        as they play. Game types include board, card, and 
+        video games.
+      </description>
+    </genre>
+    <genre id="gr-0005" title="Games for Science and Research">
+      <image source="science_title"/>
+      <description>
+        Games for science and research often have a specific scientific or research-related goal,
+        such as mapping the brain, collecting data on spatial navigation,
+        or identifying patterns in DNA sequences. Games for science and 
+        research can be used to engage the general public in scientific 
+        research, to collect data that would be difficult or impossible 
+        to gather through traditional means, or to help researchers understand 
+        complex systems or solve problems. These games can be an effective way 
+        to promote scientific literacy and encourage people to learn about and 
+        contribute to scientific research.
+      </description>
+    </genre>
+    <genre id="gr-0006" title="Production">
+      <image source="production_title"/>
+      <description>
+        Games for production, also known as factory simulation games
+        or tycoon games, are video games that simulate the management
+        and operation of a production facility. These games often involve
+        tasks such as gathering resources, building structures and machines,
+        and automating production processes in order to create a product or 
+        service. Games for production can be used to teach players about
+        various aspects of production, such as supply chain management,
+        resource allocation, and quality control. These games can also
+        be used to challenge players to find the most efficient and
+        effective ways to produce goods or services.
+      </description>
+    </genre>
+    <genre id="gr-0007" title="Games as Work">
+      <image source="work_title"/>
+      <description>
+        Games for work, also known as gamification or gamified training,
+        are video games or game-like elements that are used to engage 
+        and motivate employees in their work. These games can be used 
+        to teach new skills, encourage teamwork and collaboration, 
+        or improve productivity. Games for work can be incorporated 
+        into training programs, used as part of a rewards or recognition system, 
+        or implemented as part of a company's culture and values. Gamification 
+        can be an effective way to engage and motivate employees, and can be 
+        used in a variety of industries and settings.
+      </description>
+    </genre>
+  </genres>
+  <sectors>
+    <sector id="sr-0001" title="Government &amp; NGO">
+      <image source="government_sector"/>
+      <description>
+        A government and NGO serious game is a type of simulation game that is used by government 
+        agencies and non-governmental organizations (NGOs) to train employees, educate the public, and solve problems. 
+
+        These games can be used to train employees in a variety of skills, such as leadership, 
+        teamwork, and problem-solving. They can also be used to educate the public about a particular issue, or to 
+        explore different approaches to solving problems.
+
+        Government and NGO serious games can be played on a computer, or they can be played in a physical setting. 
+
+        Overall, government and NGO serious games are an important tool for these organizations to train and prepare 
+        employees, and to educate the public and explore new approaches to solving problems.
+      </description>
+    </sector>
+    <sector id="sr-0002" title="Defense">
+      <image source="defense_sector"/>
+      <description>
+        A defense serious game is a type of simulation game that is used by military and 
+        defense organizations to train personnel, plan strategies, and test new equipment.
+
+        These games can be used to train personnel in a variety of skills, including 
+        combat tactics, leadership, and decision-making. They can also be used to test new 
+        equipment or to explore different strategies and scenarios.
+
+        Defense serious games can be played on a computer, or they can be played in a physical
+        setting with simulated equipment. 
+
+        Overall, defense serious games are an important tool for military and defense organizations
+        to train and prepare personnel for a wide range of real-world situations.
+      </description>
+    </sector>
+    <sector id="sr-0003" title="Healthcare">
+      <image source="healtchcare_sector"/>
+      <description>
+        A healthcare serious game is a type of simulation game that is used in the healthcare 
+        industry to train professionals, educate the public, and explore different treatment options.
+        
+        These games can be used to train professionals in a variety of skills,
+        including patient care, diagnosis, and treatment. They can also be used to educate
+        the public about health issues or to explore different treatment options.
+
+        Healthcare serious games can be played on a computer, or they can be played
+        in a physical setting with simulated equipment. 
+
+        Overall, healthcare serious games are an important tool for the healthcare industry to train and prepare 
+        professionals and to explore new treatment options.
+      </description>
+    </sector>
+    <sector id="sr-0004" title="Marketing &amp; Communications">
+      <image source="marketing_sector"/>
+      <description>
+        A marketing and communications serious game is a type of simulation 
+        game that is used by organizations to train employees in marketing
+        and communications skills, and to explore different marketing and 
+        communication strategies. 
+
+        Marketing and communications serious games can be used to train employees 
+        in a variety of skills, including sales, advertising, and public relations. 
+        They can also be used to explore different marketing and communication strategies, 
+        and to test the effectiveness of different messages and campaigns.
+
+        Marketing and communications serious games can be played on a computer, 
+        or they can be played in a physical setting. 
+
+        Overall, marketing and communications serious games are an important tool for organizations to 
+        train and prepare employees in marketing and communication skills, and to explore new strategies.
+      </description>
+    </sector>
+    <sector id="sr-0005" title="Education">
+      <image source="education_sector"/>
+      <description>
+        An education serious game is a type of game that is designed to teach players about
+        a particular subject or issue in an interactive and engaging way. These games 
+        are often used in formal education settings, such as schools and universities, 
+        as well as in other settings, such as museums and science centers.
+
+        Education serious games can cover a wide range of subjects, from math and science 
+        to history and the arts. They can be played on a computer, or they can be played 
+        in a physical setting. Many education serious games are designed to be played in groups, 
+        which can encourage collaboration and teamwork.
+
+        Education serious games can be an effective way to engage learners and to make learning
+        more interactive and enjoyable. They can also be used to supplement traditional teaching 
+        methods, or to provide additional support for learners who need extra help.
+
+        Overall, education serious games are an important tool for teaching and learning, 
+        and they can be used to support a variety of educational goals.
+      </description>
+    </sector>
+    <sector id="sr-0006" title="Corporate">
+      <image source="corporate_sector"/>
+      <description>
+        A corporate serious game is a type of simulation game that is used by businesses and organizations 
+        to train employees, explore new ideas, and solve problems. 
+
+        Corporate serious games can be used to train employees in a variety of skills, such as leadership, 
+        teamwork, and problem-solving. They can also be used to explore new ideas and strategies, and to test the effectiveness 
+        of different approaches.
+
+        Corporate serious games can be played on a computer, or they can be played in a physical setting. 
+
+        Overall, corporate serious games are an important tool for businesses and organizations to train and prepare employees, 
+        and to explore new ideas and approaches.
+      </description>
+    </sector>
+    <sector id="sr-0007" title="Industry">
+      <image source="industry_sector"/>
+      <description>
+        An industry serious game is a type of simulation game that is used by a specific industry to train employees, 
+        explore new ideas, and solve problems. 
+
+        Industry serious games can be used to train employees in a variety of skills, such as leadership, 
+        teamwork, and problem-solving. 
+
+        Industry serious games can be played on a computer, or they can be played in a physical setting. 
+        They can be used to train individuals or teams, and they can be customized to meet the specific needs of 
+        different industries.
+
+        Overall, industry serious games are an important tool for specific industries to train and prepare employees,
+        and to explore new ideas and approaches.
+      </description>
+    </sector>
+  </sectors>
+  <games>
+   <game title="Vital Signs: Emergency Department"
+          id="gm-0001">
+      <description>
+        Play a doctor in Vital Signs: Emergency 
+        Department and challenge your medical knowledge to help 
+        treat a wide array of characters that come into the ER 
+        that day. Unlike medical school everybody can enroll in 
+        Vital Signs with nothing down and as little as a 
+        commitment of 30 minutes or less!
+
+        Come to a diagnosis by selecting from a wide range of tests 
+        and prescribe medications or other treatments to give your 
+        patients the best possible care. However, remain vigilant 
+        and flexible! Your decisions and how you handle the influx 
+        of patients that come in during your shift will decide 
+        who gets to go home and who ends up in the morgue!
+      </description>
+      <about genres="gr-0001" 
+              sectors="sr-0003"
+              logo="vs_ed_logo" 
+              website="https://www.vitalsignsgames.com/" 
+              releaseDate="October 15, 2020" 
+              contentRating="mature_17_plus">
+          <supportedLanguages>English</supportedLanguages> 
+      </about>
+      <requirements>
+        <minimum>
+          <os>Windows 7 64-bit</os>
+          <processor> Intel Core 2 Duo 2.4GHz</processor>
+          <memory>2 GB RAM</memory>
+          <graphics>NVIDIA GeForce GTX 960</graphics>
+          <storage>2 GB available space</storage>
+        </minimum>
+        <recommended>
+          <os>Windows 10 64-bit</os>
+          <processor>AMD Ryzen 3 | Intel i5 Skylake</processor>
+          <memory>4 GB RAM</memory>
+          <graphics>NVIDIA GeForce GTX 960 or better</graphics>
+          <storage>2 GB available space</storage>
+        </recommended>
+      </requirements>
+      <gallery>
+        <image source="vital_signs_1"/>
+        <image source="vital_signs_3"/>
+        <image source="vital_signs_2"/>
+        <image source="vital_signs_4"/>
+      </gallery>
+    </game>
+    <game title="FIFA 23"
+          id="gm-0002">
+      <description>Experience the thrill of the world's most popular 
+      sport with "Fifa 23." Play as your favorite national team or 
+      club and compete in leagues, tournaments, and exhibitions. 
+      With improved gameplay mechanics and realistic player models, 
+      "Fifa 23" brings the excitement of football to life.</description>
+      <about genres="gr-0002" 
+              sectors="sr-0004"
+              logo="FIFA_23_logo" 
+              website="https://www.ea.com/games/fifa/fifa-23" 
+              releaseDate="September 26, 2022" 
+              contentRating="everyone">
+          <supportedLanguages>English, French, Spanish, German, Italian, Dutch, Portuguese, Russian, Polish, Czech, Japan</supportedLanguages> 
+        </about>
+      <requirements>
+        <minimum>
+          <os>Windows 7 or higher</os>
+          <processor>Intel Core i3-2100 or AMD Phenom II X4 965</processor>
+          <memory>8 GB RAM</memory>
+          <graphics>Nvidia GeForce GTX 460 or AMD Radeon R7 260</graphics>
+          <storage>50 GB available space</storage>
+        </minimum>
+        <recommended>
+          <os>Windows 10</os>
+          <processor>Intel Core i5-3550 or AMD FX-8150</processor>
+          <memory>8 GB RAM</memory>
+          <graphics>Nvidia GeForce GTX 670 or AMD Radeon R9 270</graphics>
+          <storage>50 GB available space</storage>
+        </recommended>
+      </requirements>
+      <gallery>
+        <image source="fifa1"/>
+        <image source="fifa2"/>
+        <image source="fifa3"/>
+        <image source="fifa4"/>
+      </gallery>
+    </game>
+    <game title="Minecraft"
+          id="gm-0003">
+      <description>"Minecraft" is a sandbox video game that allows players to build and explore 
+      virtual worlds made up of blocks. It was developed by Markus Persson and released by Mojang in 2011.
+      In "Minecraft," players can explore a vast procedurally-generated world made up of a variety
+      of different biomes, including forests, mountains, caves, and oceans. They can gather resources,
+      craft items, and build structures using a variety of different blocks.
+      "Minecraft" has become a hugely popular game, with millions of players all over the world. 
+      It has also been used in education settings as a tool for teaching creativity, engineering, 
+      and computer programming.</description>
+      <about genres="gr-0003" 
+              sectors="sr-0005"
+              logo="minecraft_logo" 
+              website="https://www.minecraft.net/en-us" 
+              releaseDate="November 18, 2011" 
+              contentRating="everyone_10_plus">
+          <supportedLanguages>English, French, Spanish, German, Czech, Japan, Portuguese, Russian, Korean, Turkish</supportedLanguages>
+        </about>
+      <requirements>
+        <minimum>
+          <os>Windows 7 or later, macOS, or Linux</os>
+          <processor>Intel Core i3-3210 3.2 GHz / AMD A8-7600 APU 3.1 GHz or equivalent</processor>
+          <memory>4 GB RAM</memory>
+          <graphics>Intel HD Graphics 4000 (Ivy Bridge) or AMD Radeon R5 series (Kaveri line) with OpenGL 4.4*</graphics>
+          <storage>At least 1GB of free space</storage>
+        </minimum>
+        <recommended>
+          <os>Windows 10</os>
+          <processor>Intel Core i5-4690 3.5GHz / AMD A10-7800 APU 3.5 GHz or equivalent</processor>
+          <memory>8 GB RAM</memory>
+          <graphics> NVIDIA GeForce 700 Series or AMD Radeon Rx 200 Series (excluding integrated chipsets) with OpenGL 4.5</graphics>
+          <storage>4GB (SSD is recommended)</storage>
+        </recommended>
+      </requirements>
+      <gallery>
+        <image source="minecraft1"/>
+        <image source="minecraft2"/>
+        <image source="minecraft3"/>
+        <image source="minecraft4"/>
+      </gallery>
+    </game>
+    <game title="Sid Meier’s Civilization® VI"
+          id="gm-0004">
+      <description>Civilization VI is a turn-based 
+      strategy game that allows players to build and 
+      lead their own civilizations from the ground up. 
+      Players can choose from a variety of historical 
+      and fictional leaders and empires, and must make 
+      decisions that will shape the course of their 
+      civilization's history. The game features a range 
+      of challenging scenarios, including natural disasters, 
+      diplomatic relations, and military conflicts.</description>
+      <about genres="gr-0004" 
+              sectors="sr-0001"
+              logo="civilization_VI_logo" 
+              website="https://civilization.com/" 
+              releaseDate="October 21, 2016" 
+              contentRating="teen">
+          <supportedLanguages>English, French, Spanish, German, Russian, Korean, Czech, Japan</supportedLanguages> 
+        </about>
+      <requirements>
+        <minimum>
+           <os>Windows 7 64bit / 8.1 64bit / 10 64bit</os>
+            <processor>Intel Core i3 2.5 Ghz or AMD Phenom II 2.6 Ghz or greater</processor>
+            <memory>4 GB RAM</memory>
+            <graphics>1 GB NVIDIA GeForce 660 or AMD Radeon 7870 or equivalent DX11 GPU</graphics>
+            <storage>12 GB available space</storage>
+          </minimum>
+          <recommended>
+            <os>Windows 7 64bit / 8.1 64bit / 10 64bit</os>
+            <processor>Fourth generation Intel Core i5 2.5 Ghz or AMD FX8350 4.0 Ghz or greater</processor>
+            <memory>8 GB RAM</memory>
+            <graphics>2 GB NVIDIA GeForce GTX 970 or AMD Radeon R9 290X or equivalent DX11 GPU</graphics>
+            <storage>12 GB available space</storage>
+        </recommended>
+      </requirements>
+      <gallery>
+        <image source="civilization_VI_1"/>
+        <image source="civilization_VI_2"/>
+        <image source="civilization_VI_3"/>
+        <image source="civilization_VI_4"/>
+      </gallery>
+    </game>
+    <game title="Call of Duty: Modern Warfare II"
+          id="gm-0005">
+      <description>Call of Duty is a first-person shooter game series that takes place in various 
+      historical and fictional settings, including World War II, the Cold War, and modern-day conflicts. 
+      Players control a character and engage in a variety of military-themed missions, such as 
+      completing objectives, eliminating enemy forces, and surviving enemy attacks. The series is known 
+      for its intense and immersive gameplay, as well as its realistic graphics and sound effects. 
+      In addition to the single-player campaign, Call of Duty also features a variety of multiplayer modes, 
+      allowing players to compete against each other online. The series has been extremely popular since its 
+      inception, and new installments are released regularly.
+      </description>
+      <about genres="gr-0005" 
+              sectors="sr-0002"
+              logo="call_of_duty_logo" 
+              website="https://www.callofduty.com/" 
+              releaseDate="October 28, 2022" 
+              contentRating="adults_only">
+          <supportedLanguages>English, French, Russian, German, Italian, Spanish, Japan, Polish</supportedLanguages> 
+        </about>
+      <requirements>
+        <minimum>
+          <os>Windows 10 64 Bit</os>
+          <processor>Intel Core i3-6100 / Core i5-2500K or AMD Ryzen 3 1200</processor>
+          <memory>8 GB RAM</memory>
+          <graphics>NVIDIA GeForce GTX 960 or AMD Radeon RX 470</graphics>
+          <storage>125 GB available space</storage>
+        </minimum>
+        <recommended>
+          <os>Windows 10 64 Bit (latest update) or Windows 11 64 Bit (latest update)</os>
+          <processor>Intel Core i5-6600K / Core i7-4770 or AMD Ryzen 5 1400</processor>
+          <memory>12 GB RAM</memory>
+          <graphics>NVIDIA GeForce GTX 1060 or AMD Radeon RX 580</graphics>
+          <storage>125 GB available space</storage>
+        </recommended>
+      </requirements>
+      <gallery>
+        <image source="call_of_duty1"/>
+        <image source="call_of_duty2"/>
+        <image source="call_of_duty3"/>
+        <image source="call_of_duty4"/>
+      </gallery>
+    </game>
+    <game title="Take on Mars"
+          id="gm-0006">
+      <description>Take on Mars is a simulation game that 
+      allows players to explore and colonize the planet Mars. 
+      Players must manage resources, conduct scientific research, 
+      and build and maintain their base on the Martian surface. 
+      The game includes realistic physics and terrain modeling, 
+      and allows players to experience the challenges and 
+      opportunities of Mars exploration.</description>
+      <about genres="gr-0006" 
+              sectors="sr-0001"
+              logo="take_on_mars_logo" 
+              website="https://mars.takeonthegame.com/" 
+              releaseDate="February 9, 2017" 
+              contentRating="teen">
+          <supportedLanguages>English, French, Russian, German, Czech</supportedLanguages> 
+        </about>
+      <requirements>
+        <minimum>
+          <os>Windows 7 or higher</os>
+          <processor>Intel Core i3-2115C or equivalent</processor>
+          <memory>4 GB RAM</memory>
+          <graphics>Nvidia GeForce GT 430 or equivalent</graphics>
+          <storage>4 GB available space</storage>
+        </minimum>
+        <recommended>
+          <os>Windows 10</os>
+          <processor>Intel Core i5-3470 or equivalent</processor>
+          <memory>8 GB RAM</memory>
+          <graphics>Nvidia GeForce GTX 970 or equivalent</graphics>
+          <storage>4 GB available space</storage>
+        </recommended>
+      </requirements>
+      <gallery>
+        <image source="take_on_mars_1"/>
+        <image source="take_on_mars_2"/>
+        <image source="take_on_mars_3"/>
+        <image source="take_on_mars_4"/>
+      </gallery>
+    </game>
+    <game title="World of Warcraft"
+          id="gm-0007">
+      <description>
+      World of Warcraft (WoW) is a massively multiplayer online role-playing game
+      set in the Warcraft fantasy universe. In the game, players create their own character and choose
+      from a variety of races and classes, each with their own unique abilities and characteristics. 
+      Players can explore a vast world, complete quests, interact with other players, and engage in a 
+      variety of activities such as crafting, gathering resources, and battling monsters.
+      
+      The game has a subscription-based model and has a large player base, with millions of active players 
+      around the world. WoW has received numerous accolades and is considered one of the most successful 
+      and influential MMORPGs of all time.
+      </description>
+      <about genres="gr-0007" 
+              sectors="sr-0002"
+              logo="wow_logo" 
+              website="https://worldofwarcraft.com/en-gb/" 
+              releaseDate="November 23, 2004" 
+              contentRating="teen">
+          <supportedLanguages>English, French, Russian, German, Spanish, Portuguese</supportedLanguages> 
+        </about>
+      <requirements>
+        <minimum>
+          <os>Windows 7 64-bit</os>
+          <processor>Intel Core i5-760 or AMD FX-8100 or later</processor>
+          <memory>4 GB RAM</memory>
+          <graphics>NVIDIA GeForce GTX 560 2GB or AMD Radeon HD 7850 2GB or Intel HD Graphics 530 (45W)</graphics>
+          <storage>70 GB available space</storage>
+        </minimum>
+        <recommended>
+          <os>Windows 10 64-bit</os>
+          <processor>Intel Core i7-4770 or AMD FX-8310 or later</processor>
+          <memory>8 GB RAM</memory>
+          <graphics>NVIDIA GeForce GTX 960 or AMD Radeon R9 280 or later</graphics>
+          <storage>70 GB available space</storage>
+        </recommended>
+      </requirements>
+      <gallery>
+        <image source="wow1"/>
+        <image source="wow2"/>
+        <image source="wow3"/>
+        <image source="wow4"/>
+      </gallery>
+    </game>
+  </games>
+</catalogue>

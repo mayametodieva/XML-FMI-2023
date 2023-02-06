@@ -1,0 +1,105 @@
+<!ELEMENT catalogue (genres,sectors,games)>
+<!ELEMENT genres (genre+)>
+<!ELEMENT genre (image,description)>
+<!ATTLIST genre
+        id    ID     #REQUIRED
+        title CDATA  #REQUIRED>
+<!ELEMENT description (#PCDATA)>
+<!ELEMENT image EMPTY>
+
+<!ELEMENT sectors (sector+)>
+<!ELEMENT sector (image,description)>
+<!ATTLIST sector
+        id    ID    #REQUIRED
+        title CDATA #REQUIRED>
+
+<!ELEMENT games (game*)>
+<!ELEMENT game (description,about,requirements,gallery)>
+<!ATTLIST game  id    ID    #REQUIRED
+                title CDATA #REQUIRED>
+
+<!NOTATION JPEG SYSTEM "image/jpg">
+<!NOTATION PNG  SYSTEM "image/png">   
+
+<!ENTITY civilization_VI_logo SYSTEM "images/game_logos/civilization_VI_logo.png"  NDATA PNG>
+<!ENTITY FIFA_23_logo         SYSTEM "images/game_logos/FIFA_23_logo.png"  NDATA PNG>
+<!ENTITY vs_ed_logo           SYSTEM "images/game_logos/vs_ed_logo.png"  NDATA PNG>
+<!ENTITY minecraft_logo       SYSTEM "images/game_logos/minecraft_logo.png"  NDATA PNG>
+<!ENTITY call_of_duty_logo    SYSTEM "images/game_logos/call_of_duty_logo.png"   NDATA PNG>
+<!ENTITY take_on_mars_logo    SYSTEM "images/game_logos/take_on_mars_logo.png"   NDATA PNG>
+<!ENTITY wow_logo             SYSTEM "images/game_logos/wow_logo.png"  NDATA PNG>  
+
+<!ENTITY call_of_duty1        SYSTEM "images/gallery/call_of_duty1.png"      NDATA PNG>  
+<!ENTITY call_of_duty2        SYSTEM "images/gallery/call_of_duty2.png"      NDATA PNG>  
+<!ENTITY call_of_duty3        SYSTEM "images/gallery/call_of_duty3.png"      NDATA PNG>  
+<!ENTITY call_of_duty4        SYSTEM "images/gallery/call_of_duty4.png"      NDATA PNG>  
+<!ENTITY civilization_VI_1    SYSTEM "images/gallery/civilization_VI_1.png"  NDATA PNG>  
+<!ENTITY civilization_VI_2    SYSTEM "images/gallery/civilization_VI_2.png"  NDATA PNG>  
+<!ENTITY civilization_VI_3    SYSTEM "images/gallery/civilization_VI_3.png"  NDATA PNG>  
+<!ENTITY civilization_VI_4    SYSTEM "images/gallery/civilization_VI_4.png"  NDATA PNG>  
+<!ENTITY fifa1                SYSTEM "images/gallery/fifa1.png"              NDATA PNG>  
+<!ENTITY fifa2                SYSTEM "images/gallery/fifa2.png"              NDATA PNG>  
+<!ENTITY fifa3                SYSTEM "images/gallery/fifa3.png"              NDATA PNG>  
+<!ENTITY fifa4                SYSTEM "images/gallery/fifa4.png"              NDATA PNG> 
+<!ENTITY minecraft1           SYSTEM "images/gallery/minecraft1.png"         NDATA PNG> 
+<!ENTITY minecraft2           SYSTEM "images/gallery/minecraft2.png"         NDATA PNG> 
+<!ENTITY minecraft3           SYSTEM "images/gallery/minecraft3.png"         NDATA PNG> 
+<!ENTITY minecraft4           SYSTEM "images/gallery/minecraft4.png"         NDATA PNG> 
+<!ENTITY take_on_mars_1       SYSTEM "images/gallery/take_on_mars_1.png"     NDATA PNG> 
+<!ENTITY take_on_mars_2       SYSTEM "images/gallery/take_on_mars_2.png"     NDATA PNG> 
+<!ENTITY take_on_mars_3       SYSTEM "images/gallery/take_on_mars_3.png"     NDATA PNG> 
+<!ENTITY take_on_mars_4       SYSTEM "images/gallery/take_on_mars_4.png"     NDATA PNG> 
+<!ENTITY vital_signs_1        SYSTEM "images/gallery/vital_signs_1.png"      NDATA PNG> 
+<!ENTITY vital_signs_2        SYSTEM "images/gallery/vital_signs_2.png"      NDATA PNG> 
+<!ENTITY vital_signs_3        SYSTEM "images/gallery/vital_signs_3.png"      NDATA PNG> 
+<!ENTITY vital_signs_4        SYSTEM "images/gallery/vital_signs_4.png"      NDATA PNG> 
+<!ENTITY wow1                 SYSTEM "images/gallery/wow1.png"               NDATA PNG> 
+<!ENTITY wow2                 SYSTEM "images/gallery/wow2.png"               NDATA PNG> 
+<!ENTITY wow3                 SYSTEM "images/gallery/wow3.png"               NDATA PNG> 
+<!ENTITY wow4                 SYSTEM "images/gallery/wow4.png"               NDATA PNG> 
+
+<!ENTITY advergames_title     SYSTEM "images/titles/advergames_title.png"    NDATA PNG> 
+<!ENTITY education_title      SYSTEM "images/titles/education_title.png"     NDATA PNG> 
+<!ENTITY health_title         SYSTEM "images/titles/health_title.png"        NDATA PNG> 
+<!ENTITY production_title     SYSTEM "images/titles/production_title.png"    NDATA PNG> 
+<!ENTITY science_title        SYSTEM "images/titles/science_title.png"       NDATA PNG> 
+<!ENTITY training_title       SYSTEM "images/titles/training_title.png"      NDATA PNG> 
+<!ENTITY work_title           SYSTEM "images/titles/work_title.png"          NDATA PNG> 
+
+<!ENTITY corporate_sector     SYSTEM "images/sectors/corporate_sector.png"   NDATA PNG> 
+<!ENTITY defense_sector       SYSTEM "images/sectors/defense_sector.png"     NDATA PNG> 
+<!ENTITY education_sector     SYSTEM "images/sectors/education_sector.png"   NDATA PNG> 
+<!ENTITY government_sector    SYSTEM "images/sectors/government_sector.png"  NDATA PNG> 
+<!ENTITY healtchcare_sector   SYSTEM "images/sectors/healtchcare_sector.png" NDATA PNG> 
+<!ENTITY industry_sector      SYSTEM "images/sectors/industry_sector.png"    NDATA PNG> 
+<!ENTITY marketing_sector     SYSTEM "images/sectors/marketing_sector.png"   NDATA PNG>
+
+
+<!ENTITY % ratings "    everyone            |
+                        everyone_10_plus    |
+                        teen                |
+                        mature_17_plus      |
+                        adults_only         ">
+
+<!ELEMENT about (supportedLanguages)>
+<!ATTLIST about genres          IDREFS      #REQUIRED
+                sectors         IDREFS      #REQUIRED
+                logo            ENTITY      #REQUIRED
+                website         CDATA       #REQUIRED
+                releaseDate     CDATA       #REQUIRED
+                contentRating   (%ratings;) #REQUIRED>
+                
+<!ELEMENT supportedLanguages (#PCDATA)>
+<!ELEMENT requirements (minimum,recommended)>
+<!ELEMENT minimum (os,processor,memory,graphics,storage)>
+<!ELEMENT os (#PCDATA)>
+<!ELEMENT processor (#PCDATA)>
+<!ELEMENT memory (#PCDATA)>
+<!ELEMENT graphics (#PCDATA)>
+<!ELEMENT storage (#PCDATA)>
+<!ELEMENT recommended (os,processor,memory,graphics,storage)>
+<!ELEMENT gallery (image+)>
+<!ATTLIST image
+        source CDATA #REQUIRED>
+
+      

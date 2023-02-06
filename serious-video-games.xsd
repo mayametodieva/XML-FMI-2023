@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="windows-1251"?>
+<xs:schema xmlns="http://tempuri.org/serious-video-games" elementFormDefault="qualified" targetNamespace="http://tempuri.org/serious-video-games" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+	<xs:element name="catalogue">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element ref="genres" />
+				<xs:element ref="sectors" />
+				<xs:element ref="games" />
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="genres">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element minOccurs="1" maxOccurs="unbounded" ref="genre" />
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="genre">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element ref="image" />
+				<xs:element ref="description" />
+			</xs:sequence>
+			<xs:attribute name="id" type="xs:ID" use="required" />
+			<xs:attribute name="title" type="xs:string" use="required" />
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="description" type="xs:string" />
+	<xs:element name="image">
+		<xs:complexType>
+			<xs:attribute name="source" type="xs:string" use="required" />
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="sectors">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element minOccurs="1" maxOccurs="unbounded" ref="sector" />
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="sector">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element ref="image" />
+				<xs:element ref="description" />
+			</xs:sequence>
+			<xs:attribute name="id" type="xs:ID" use="required" />
+			<xs:attribute name="title" type="xs:string" use="required" />
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="games">
+		<xs:complexType>
+			<xs:sequence minOccurs="0" maxOccurs="unbounded">
+				<xs:element ref="game" />
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="game">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element ref="description" />
+				<xs:element ref="about" />
+				<xs:element ref="requirements" />
+				<xs:element ref="gallery" />
+			</xs:sequence>
+			<xs:attribute name="id" type="xs:ID" use="required" />
+			<xs:attribute name="title" type="xs:string" use="required" />
+		</xs:complexType>
+	</xs:element>
+	<xs:notation name="JPEG" public="" system="image/jpg" />
+	<xs:notation name="PNG" public="" system="image/png" />
+	<xs:element name="about">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element ref="supportedLanguages" />
+			</xs:sequence>
+			<xs:attribute name="genres" type="xs:IDREFS" use="required" />
+			<xs:attribute name="sectors" type="xs:IDREFS" use="required" />
+			<xs:attribute name="logo" type="xs:ENTITY" use="required" />
+			<xs:attribute name="website" type="xs:string" use="required" />
+			<xs:attribute name="releaseDate" type="xs:string" use="required" />
+			<xs:attribute name="contentRating" use="required">
+				<xs:simpleType>
+					<xs:restriction base="xs:NMTOKEN">
+						<xs:enumeration value="everyone" />
+						<xs:enumeration value="everyone_10_plus" />
+						<xs:enumeration value="teen" />
+						<xs:enumeration value="mature_17_plus" />
+						<xs:enumeration value="adults_only" />
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:attribute>
+			<xs:attribute name="logo_path" type="xs:string" use="required" />
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="supportedLanguages" type="xs:string" />
+	<xs:element name="requirements">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element ref="minimum" />
+				<xs:element ref="recommended" />
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="minimum">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element ref="os" />
+				<xs:element ref="processor" />
+				<xs:element ref="memory" />
+				<xs:element ref="graphics" />
+				<xs:element ref="storage" />
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="os" type="xs:string" />
+	<xs:element name="processor" type="xs:string" />
+	<xs:element name="memory" type="xs:string" />
+	<xs:element name="graphics" type="xs:string" />
+	<xs:element name="storage" type="xs:string" />
+	<xs:element name="recommended">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element ref="os" />
+				<xs:element ref="processor" />
+				<xs:element ref="memory" />
+				<xs:element ref="graphics" />
+				<xs:element ref="storage" />
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="gallery">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element minOccurs="1" maxOccurs="unbounded" ref="image" />
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+</xs:schema>
